@@ -1,2 +1,2 @@
 # SRG Console
-A website to mirror the actual SRG console
+A website to mirror the actual SRG console.
