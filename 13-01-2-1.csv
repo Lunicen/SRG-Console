@@ -1,0 +1,271 @@
+Kierunek;Przystanek;Godzina;Minuta
+Stogi Plaża;Władysława IV;10;11
+Stogi Plaża;Nowy Port Oliwska;10;12
+Stogi Plaża;Przychodnia;10;13
+Stogi Plaża;Rybołowców;10;14
+Stogi Plaża;Kasztanowa;10;15
+Stogi Plaża;Latarnia Morska;10;16
+Stogi Plaża;Krasickiego;10;18
+Stogi Plaża;Brzeźno Dom Zdrojowy;10;21
+Stogi Plaża;Mazurska;10;22
+Stogi Plaża;Wczasy;10;23
+Stogi Plaża;Dworska;10;25
+Stogi Plaża;al. Płażyńskiego;10;26
+Stogi Plaża;Grudziądzka;10;28
+Stogi Plaża;Kolonia Uroda;10;29
+Stogi Plaża;Kościuszki;10;31
+Stogi Plaża;Mickiewicza;10;32
+Stogi Plaża;Reja;10;33
+Stogi Plaża;Wyspiańskiego;10;35
+Stogi Plaża;Opera Bałtycka;10;38
+Stogi Plaża;Traugutta;10;39
+Stogi Plaża;Uniwersytet Medyczny;10;40
+Stogi Plaża;Chodowieckiego;10;41
+Stogi Plaża;Brama Oliwska;10;42
+Stogi Plaża;Dworzec Główny;10;44
+Stogi Plaża;Brama Wyżynna;10;47
+Stogi Plaża;Okopowa;10;49
+Stogi Plaża;Żabi Kruk;10;50
+Stogi Plaża;Chmielna;10;51
+Stogi Plaża;Akademia Muzyczna;10;53
+Stogi Plaża;Brama Żuławska;10;55
+Stogi Plaża;Głęboka;10;57
+Stogi Plaża;Przeróbka;10;59
+Stogi Plaża;Lenartowicza;11;00
+Stogi Plaża;Sucharskiego;11;02
+Stogi Plaża;Kaczeńce;11;03
+Stogi Plaża;Ugory eMOCja;11;04
+Stogi Plaża;Zimna;11;05
+Stogi Plaża;Stogi;11;07
+Stogi Plaża;Rozłogi;11;08
+Stogi Plaża;Stogi Plaża;11;10
+Brzeźno Dom Zdrojowy;Stogi Plaża;11;29
+Brzeźno Dom Zdrojowy;Stogi;11;32
+Brzeźno Dom Zdrojowy;Zimna;11;34
+Brzeźno Dom Zdrojowy;Ugory eMOCja;11;35
+Brzeźno Dom Zdrojowy;Kaczeńce;11;36
+Brzeźno Dom Zdrojowy;Sucharskiego;11;38
+Brzeźno Dom Zdrojowy;Lenartowicza;11;39
+Brzeźno Dom Zdrojowy;Przeróbka;11;40
+Brzeźno Dom Zdrojowy;Głęboka;11;42
+Brzeźno Dom Zdrojowy;Brama Żuławska;11;44
+Brzeźno Dom Zdrojowy;Akademia Muzyczna;11;46
+Brzeźno Dom Zdrojowy;Chmielna;11;47
+Brzeźno Dom Zdrojowy;Żabi Kruk;11;48
+Brzeźno Dom Zdrojowy;Okopowa;11;50
+Brzeźno Dom Zdrojowy;Brama Wyżynna;11;52
+Brzeźno Dom Zdrojowy;Dworzec Główny;11;54
+Brzeźno Dom Zdrojowy;Brama Oliwska;11;57
+Brzeźno Dom Zdrojowy;Chodowieckiego;11;58
+Brzeźno Dom Zdrojowy;Uniwersytet Medyczny;11;59
+Brzeźno Dom Zdrojowy;Traugutta;12;01
+Brzeźno Dom Zdrojowy;Opera Bałtycka;12;03
+Brzeźno Dom Zdrojowy;Wyspiańskiego;12;06
+Brzeźno Dom Zdrojowy;Reja;12;07
+Brzeźno Dom Zdrojowy;Mickiewicza;12;09
+Brzeźno Dom Zdrojowy;Kościuszki;12;11
+Brzeźno Dom Zdrojowy;Kolonia Uroda;12;12
+Brzeźno Dom Zdrojowy;Grudziądzka;12;13
+Brzeźno Dom Zdrojowy;al. Płażyńskiego;12;15
+Brzeźno Dom Zdrojowy;Uczniowska;12;16
+Brzeźno Dom Zdrojowy;Gdańska;12;18
+Brzeźno Dom Zdrojowy;Sternicza;12;20
+Brzeźno Dom Zdrojowy;Brzeźno Dom Zdrojowy;12;21
+Stogi Plaża;Brzeźno Dom Zdrojowy;12;21
+Stogi Plaża;Mazurska;12;22
+Stogi Plaża;Wczasy;12;23
+Stogi Plaża;Dworska;12;25
+Stogi Plaża;al. Płażyńskiego;12;26
+Stogi Plaża;Grudziądzka;12;28
+Stogi Plaża;Kolonia Uroda;12;29
+Stogi Plaża;Kościuszki;12;31
+Stogi Plaża;Mickiewicza;12;32
+Stogi Plaża;Reja;12;33
+Stogi Plaża;Wyspiańskiego;12;35
+Stogi Plaża;Opera Bałtycka;12;38
+Stogi Plaża;Traugutta;12;39
+Stogi Plaża;Uniwersytet Medyczny;12;40
+Stogi Plaża;Chodowieckiego;12;41
+Stogi Plaża;Brama Oliwska;12;42
+Stogi Plaża;Dworzec Główny;12;44
+Stogi Plaża;Brama Wyżynna;12;47
+Stogi Plaża;Okopowa;12;49
+Stogi Plaża;Żabi Kruk;12;50
+Stogi Plaża;Chmielna;12;51
+Stogi Plaża;Akademia Muzyczna;12;53
+Stogi Plaża;Brama Żuławska;12;55
+Stogi Plaża;Głęboka;12;57
+Stogi Plaża;Przeróbka;12;59
+Stogi Plaża;Lenartowicza;13;00
+Stogi Plaża;Sucharskiego;13;02
+Stogi Plaża;Kaczeńce;13;03
+Stogi Plaża;Ugory eMOCja;13;04
+Stogi Plaża;Zimna;13;05
+Stogi Plaża;Stogi;13;07
+Stogi Plaża;Rozłogi;13;08
+Stogi Plaża;Stogi Plaża;13;10
+Brzeźno Dom Zdrojowy;Stogi Plaża;13;29
+Brzeźno Dom Zdrojowy;Stogi;13;32
+Brzeźno Dom Zdrojowy;Zimna;13;34
+Brzeźno Dom Zdrojowy;Ugory eMOCja;13;35
+Brzeźno Dom Zdrojowy;Kaczeńce;13;36
+Brzeźno Dom Zdrojowy;Sucharskiego;13;38
+Brzeźno Dom Zdrojowy;Lenartowicza;13;39
+Brzeźno Dom Zdrojowy;Przeróbka;13;40
+Brzeźno Dom Zdrojowy;Głęboka;13;42
+Brzeźno Dom Zdrojowy;Brama Żuławska;13;44
+Brzeźno Dom Zdrojowy;Akademia Muzyczna;13;46
+Brzeźno Dom Zdrojowy;Chmielna;13;47
+Brzeźno Dom Zdrojowy;Żabi Kruk;13;48
+Brzeźno Dom Zdrojowy;Okopowa;13;50
+Brzeźno Dom Zdrojowy;Brama Wyżynna;13;52
+Brzeźno Dom Zdrojowy;Dworzec Główny;13;54
+Brzeźno Dom Zdrojowy;Brama Oliwska;13;57
+Brzeźno Dom Zdrojowy;Chodowieckiego;13;58
+Brzeźno Dom Zdrojowy;Uniwersytet Medyczny;13;59
+Brzeźno Dom Zdrojowy;Traugutta;14;01
+Brzeźno Dom Zdrojowy;Opera Bałtycka;14;03
+Brzeźno Dom Zdrojowy;Wyspiańskiego;14;06
+Brzeźno Dom Zdrojowy;Reja;14;07
+Brzeźno Dom Zdrojowy;Mickiewicza;14;09
+Brzeźno Dom Zdrojowy;Kościuszki;14;11
+Brzeźno Dom Zdrojowy;Kolonia Uroda;14;12
+Brzeźno Dom Zdrojowy;Grudziądzka;14;13
+Brzeźno Dom Zdrojowy;al. Płażyńskiego;14;15
+Brzeźno Dom Zdrojowy;Uczniowska;14;16
+Brzeźno Dom Zdrojowy;Gdańska;14;18
+Brzeźno Dom Zdrojowy;Sternicza;14;20
+Brzeźno Dom Zdrojowy;Brzeźno Dom Zdrojowy;14;21
+Stogi;Brzeźno Dom Zdrojowy;14;21
+Stogi;Mazurska;14;22
+Stogi;Wczasy;14;23
+Stogi;Dworska;14;25
+Stogi;al. Płażyńskiego;14;26
+Stogi;Grudziądzka;14;28
+Stogi;Kolonia Uroda;14;29
+Stogi;Kościuszki;14;31
+Stogi;Mickiewicza;14;32
+Stogi;Reja;14;33
+Stogi;Wyspiańskiego;14;35
+Stogi;Opera Bałtycka;14;38
+Stogi;Traugutta;14;39
+Stogi;Uniwersytet Medyczny;14;40
+Stogi;Chodowieckiego;14;41
+Stogi;Brama Oliwska;14;42
+Stogi;Dworzec Główny;14;44
+Stogi;Brama Wyżynna;14;47
+Stogi;Okopowa;14;49
+Stogi;Żabi Kruk;14;50
+Stogi;Chmielna;14;51
+Stogi;Akademia Muzyczna;14;53
+Stogi;Brama Żuławska;14;55
+Stogi;Głęboka;14;57
+Stogi;Przeróbka;14;59
+Stogi;Lenartowicza;15;00
+Stogi;Sucharskiego;15;02
+Stogi;Kaczeńce;15;03
+Stogi;Ugory eMOCja;15;04
+Stogi;Zimna;15;05
+Stogi;Stogi;15;07
+Brzeźno Dom Zdrojowy;Stogi;15;32
+Brzeźno Dom Zdrojowy;Zimna;15;34
+Brzeźno Dom Zdrojowy;Ugory eMOCja;15;35
+Brzeźno Dom Zdrojowy;Kaczeńce;15;36
+Brzeźno Dom Zdrojowy;Sucharskiego;15;38
+Brzeźno Dom Zdrojowy;Lenartowicza;15;39
+Brzeźno Dom Zdrojowy;Przeróbka;15;40
+Brzeźno Dom Zdrojowy;Głęboka;15;42
+Brzeźno Dom Zdrojowy;Brama Żuławska;15;44
+Brzeźno Dom Zdrojowy;Akademia Muzyczna;15;46
+Brzeźno Dom Zdrojowy;Chmielna;15;47
+Brzeźno Dom Zdrojowy;Żabi Kruk;15;48
+Brzeźno Dom Zdrojowy;Okopowa;15;50
+Brzeźno Dom Zdrojowy;Brama Wyżynna;15;52
+Brzeźno Dom Zdrojowy;Dworzec Główny;15;54
+Brzeźno Dom Zdrojowy;Brama Oliwska;15;57
+Brzeźno Dom Zdrojowy;Chodowieckiego;15;58
+Brzeźno Dom Zdrojowy;Uniwersytet Medyczny;15;59
+Brzeźno Dom Zdrojowy;Traugutta;16;01
+Brzeźno Dom Zdrojowy;Opera Bałtycka;16;03
+Brzeźno Dom Zdrojowy;Wyspiańskiego;16;06
+Brzeźno Dom Zdrojowy;Reja;16;07
+Brzeźno Dom Zdrojowy;Mickiewicza;16;09
+Brzeźno Dom Zdrojowy;Kościuszki;16;11
+Brzeźno Dom Zdrojowy;Kolonia Uroda;16;12
+Brzeźno Dom Zdrojowy;Grudziądzka;16;13
+Brzeźno Dom Zdrojowy;al. Płażyńskiego;16;15
+Brzeźno Dom Zdrojowy;Uczniowska;16;16
+Brzeźno Dom Zdrojowy;Gdańska;16;18
+Brzeźno Dom Zdrojowy;Sternicza;16;20
+Brzeźno Dom Zdrojowy;Brzeźno Dom Zdrojowy;16;21
+Stogi Plaża;Brzeźno Dom Zdrojowy;16;21
+Stogi Plaża;Mazurska;16;22
+Stogi Plaża;Wczasy;16;23
+Stogi Plaża;Dworska;16;25
+Stogi Plaża;al. Płażyńskiego;16;26
+Stogi Plaża;Grudziądzka;16;28
+Stogi Plaża;Kolonia Uroda;16;29
+Stogi Plaża;Kościuszki;16;31
+Stogi Plaża;Mickiewicza;16;32
+Stogi Plaża;Reja;16;33
+Stogi Plaża;Wyspiańskiego;16;35
+Stogi Plaża;Opera Bałtycka;16;38
+Stogi Plaża;Traugutta;16;39
+Stogi Plaża;Uniwersytet Medyczny;16;40
+Stogi Plaża;Chodowieckiego;16;41
+Stogi Plaża;Brama Oliwska;16;42
+Stogi Plaża;Dworzec Główny;16;44
+Stogi Plaża;Brama Wyżynna;16;47
+Stogi Plaża;Okopowa;16;49
+Stogi Plaża;Żabi Kruk;16;50
+Stogi Plaża;Chmielna;16;51
+Stogi Plaża;Akademia Muzyczna;16;53
+Stogi Plaża;Brama Żuławska;16;55
+Stogi Plaża;Głęboka;16;57
+Stogi Plaża;Przeróbka;16;59
+Stogi Plaża;Lenartowicza;17;00
+Stogi Plaża;Sucharskiego;17;02
+Stogi Plaża;Kaczeńce;17;03
+Stogi Plaża;Ugory eMOCja;17;04
+Stogi Plaża;Zimna;17;05
+Stogi Plaża;Stogi;17;07
+Stogi Plaża;Rozłogi;17;08
+Stogi Plaża;Stogi Plaża;17;10
+Nowy Port Zajezdnia;Stogi Plaża;17;29
+Nowy Port Zajezdnia;Stogi;17;32
+Nowy Port Zajezdnia;Zimna;17;34
+Nowy Port Zajezdnia;Ugory eMOCja;17;35
+Nowy Port Zajezdnia;Kaczeńce;17;36
+Nowy Port Zajezdnia;Sucharskiego;17;38
+Nowy Port Zajezdnia;Lenartowicza;17;39
+Nowy Port Zajezdnia;Przeróbka;17;40
+Nowy Port Zajezdnia;Głęboka;17;42
+Nowy Port Zajezdnia;Brama Żuławska;17;44
+Nowy Port Zajezdnia;Akademia Muzyczna;17;46
+Nowy Port Zajezdnia;Chmielna;17;47
+Nowy Port Zajezdnia;Żabi Kruk;17;48
+Nowy Port Zajezdnia;Okopowa;17;50
+Nowy Port Zajezdnia;Brama Wyżynna;17;52
+Nowy Port Zajezdnia;Dworzec Główny;17;54
+Nowy Port Zajezdnia;Brama Oliwska;17;57
+Nowy Port Zajezdnia;Chodowieckiego;17;58
+Nowy Port Zajezdnia;Uniwersytet Medyczny;17;59
+Nowy Port Zajezdnia;Traugutta;18;01
+Nowy Port Zajezdnia;Opera Bałtycka;18;03
+Nowy Port Zajezdnia;Wyspiańskiego;18;06
+Nowy Port Zajezdnia;Reja;18;07
+Nowy Port Zajezdnia;Mickiewicza;18;09
+Nowy Port Zajezdnia;Kościuszki;18;11
+Nowy Port Zajezdnia;Kolonia Uroda;18;12
+Nowy Port Zajezdnia;Grudziądzka;18;13
+Nowy Port Zajezdnia;al. Płażyńskiego;18;15
+Nowy Port Zajezdnia;Uczniowska;18;16
+Nowy Port Zajezdnia;Gdańska;18;18
+Nowy Port Zajezdnia;Sternicza;18;20
+Nowy Port Zajezdnia;Brzeźno Dom Zdrojowy;18;21
+Nowy Port Zajezdnia;Krasickiego;18;22
+Nowy Port Zajezdnia;Latarnia Morska;18;24
+Nowy Port Zajezdnia;Kasztanowa;18;25
+Nowy Port Zajezdnia;Na Zaspę;18;26
+Nowy Port Zajezdnia;Plac Wolności;18;28
+Nowy Port Zajezdnia;Nowy Port Zajezdnia;18;29

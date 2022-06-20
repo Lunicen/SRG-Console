@@ -1,0 +1,71 @@
+
+body {
+    background: #2A2A2A;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    font-family: 'Bahnschrift', sans-serif;
+}
+#zegar{
+    color:white;
+    padding-left:1200px;
+}
+
+.input {
+    outline: solid;
+    line-height: 1.4;
+    border: 2px gray;
+    border-block-start-color: gray;
+    color: gray;
+    background: #2A2A2A;
+    border-radius: 8px;
+}
+
+.actual {
+    border-radius: 8px;
+    background: cyan;
+    color: white;
+    margin-left:25px;
+}
+
+#typDnia {
+    margin-left: 100px;
+}
+
+#line {
+    margin-left: 20px;
+}
+@media (max-width: 600px) {
+
+    body {
+        background: black;
+        color: white;
+        text-align: center;
+        padding-left: 20px;
+    }
+
+    .input {
+        outline: solid;
+        line-height: 1.4;
+        border: 2px gray;
+        border-block-start-color: gray;
+        color: gray;
+        background: black;
+        border-radius: 8px;
+    }
+
+    .actual {
+        border-radius: 8px;
+        background: cyan;
+        color: white;
+        padding-left: 20px;
+    }
+
+    #typDnia {
+        margin-left: 100px;
+    }
+
+    #line {
+        margin-left: 20px;
+    }
+}
