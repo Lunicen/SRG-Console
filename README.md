@@ -16,3 +16,30 @@ The project is build on **Docker** which runs 3 microservices:
 
 # Installation
 The installation is fairly simple. What You need is a PC or server that has an installed Docker 🐳 and around 1 GB of free space.
+
+
+1. Open the Command Prompt in the project folder
+2. Build the images by typing
+   
+   ```bash
+   docker-compose up --build
+   ```
+
+   If you see this message, then everything works properly
+
+   ![Successful Build](misc/SuccessfulBuild.png)
+
+3. Stop the containers by clicking `CTRL+C`, then launch the Docker Compose in the *detached* mode
+
+   ```bash
+   docker-compose up --detach
+   ```
+4. Create & load the tables to the Database container
+   
+   *Note: The r00tadmin is the default password*
+   ```bash
+   docker exec -i db mysql -u root -pr00tadmin mysql < dbData.sql
+   ```
+5. If you're getting the following output, nothing more then well done - You're all set 🎉!
+
+   ![Successful Load](misc/SuccessfulLoad.png)
