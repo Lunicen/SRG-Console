@@ -3,10 +3,10 @@
 use function htmlspecialchars as safe;
 
 
-$host = '127.0.0.1';
-$db   = 'ourDatabase';
+$host = 'db';
+$db   = 'srg';
 $user = 'root';
-$pass = 'password';
+$pass = 'r00tadmin';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -31,16 +31,16 @@ ORDER BY hour DESC, minute DESC
 LIMIT 1");
 $stmt->execute([$hourTimes100plusMinutes]);
 $result = $stmt->fetchAll();
-print_r($result);
-//print_r($result[0]['hour']*100+$result[0]['minute']);
-
+//print_r($result);
+print_r("Poprzednia stacja: ".$result[0]['hammerTime']. " Kierunek: ".$result[0]['direction'] ." Godzina: " . $result[0]['hour'] .":".$result[0]['minute'] );
+echo ("<br>");
 $stmt = $pdo->prepare("SELECT * FROM `$tableName` WHERE hour*100+minute >= ?
 ORDER BY hour ASC, minute ASC
 LIMIT 2");
 $stmt->execute([$hourTimes100plusMinutes]);
 $result = $stmt->fetchAll();
-print_r($result);
-//print_r($result[0]['hour']*100+$result[0]['minute']);
+//print_r($result);
+print_r("Obecna stacja: ".$result[0]['hammerTime']. " Kierunek: ".$result[0]['direction'] ." Godzina: " . $result[0]['hour'] .":".$result[0]['minute'] );
 
 
 
@@ -54,7 +54,7 @@ $shouldDisplayRoute = $direction !== '';
 <html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Tramwajarz XD</title>
+    <title>SRG Console</title>
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet">
     <script type="text/javascript" src="scripts/time.js"></script>
