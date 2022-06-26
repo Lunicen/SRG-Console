@@ -43,3 +43,17 @@ The installation is fairly simple. What You need is a PC or server that has an i
 5. If you're getting the following output, nothing more then well done - You're all set 🎉!
 
    ![Successful Load](misc/SuccessfulLoad.png)
+
+# Screenshots
+Panel for choosing the route, brigade & the type of ride.
+
+![Settings panel](misc/Example1.png)
+
+SRG Console simulation
+
+![SRG Console panel](misc/Example2.png)
+
+# Authors
+- Hubert Lewandowski (*RooTender*)
+- Łukasz Zaleski (*lukasz340*)
+- Michał Spychalski (*spychalak*)
