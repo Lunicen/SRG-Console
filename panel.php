@@ -57,6 +57,8 @@ $shouldDisplayRoute = $direction !== '';
     <title>SRG Console</title>
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!--Tram icon created by Good Ware - Flaticon-->
     <script type="text/javascript" src="scripts/time.js"></script>
 
 </head>

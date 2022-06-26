@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <title>SRG Console</title>
     <link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet">
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!--Tram icon created by Good Ware - Flaticon-->
 </head>
 <body>
 <div id="container">
