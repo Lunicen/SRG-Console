@@ -1,21 +1,52 @@
 
-body {
+html, body {
+    margin:0;
+    padding:0;
+    height: 100%;
+    
     background: #2A2A2A;
-    color: white;
-    text-align: center;
-    padding-left: 20px;
+    color: #E5FCFF;
     font-family: 'Bahnschrift', sans-serif;
 }
-#zegar{
-    color:white;
-    padding-left:1200px;
+
+#container {
+    text-align: center;
 }
 
-.input {
+#container .form-container {
+    display: inline-block;
+}
+
+#container form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+#container form .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#container form .column > * {
+    margin: 0.5rem;
+}
+
+#container form .column label {
+    padding: 2px;
+    text-align: right;
+}
+
+#panel .row {
+    margin: 1rem 0;
+}
+
+/*.input {
     outline: solid;
     line-height: 1.4;
-    border: 2px gray;
-    border-block-start-color: gray;
+    border: 0.5rem gray;
     color: gray;
     background: #2A2A2A;
     border-radius: 8px;
@@ -26,19 +57,11 @@ body {
     background: cyan;
     color: white;
     margin-left:25px;
-}
+}*/
 
-#typDnia {
-    margin-left: 100px;
-}
-
-#line {
-    margin-left: 20px;
-}
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
 
     body {
-        background: black;
         color: white;
         text-align: center;
         padding-left: 20px;
@@ -69,3 +92,4 @@ body {
         margin-left: 20px;
     }
 }
+*/
