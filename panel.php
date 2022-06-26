@@ -1,5 +1,4 @@
 <?php
-
     use function htmlspecialchars as safe;
 
     $host = 'db';
@@ -18,33 +17,46 @@
     date_default_timezone_set('Europe/Warsaw');
 
     // FILTER_SANITIZE_NUMBER_INT
-    $line =  filter_input(INPUT_GET, 'linia', FILTER_SANITIZE_NUMBER_INT);
-    $brigade =  filter_input(INPUT_GET, 'brygada', FILTER_SANITIZE_NUMBER_INT);
-    $type =  filter_input(INPUT_GET, 'typ', FILTER_SANITIZE_NUMBER_INT);
+    $line =  filter_input(INPUT_GET, 'route', FILTER_SANITIZE_NUMBER_INT);
+    $brigade =  filter_input(INPUT_GET, 'brigade', FILTER_SANITIZE_NUMBER_INT);
+    $type =  filter_input(INPUT_GET, 'type', FILTER_SANITIZE_NUMBER_INT);
 
     $tableName = "$line-$brigade-$type";
-    $hourTimes100plusMinutes = date('Hi'); // TODO: change to current date, now only for tests
+    $currentHour = date('H');
+    $currentMinute = date('i');
 
-    // http://localhost/panel.php?linia=13&brygada=1&typ=2`;%20DROP%20TABLE%20`13-1-2`;%20--
+    // Previous stop
+    $query = $pdo->query(
+        "SELECT * FROM `$tableName` WHERE 
+        $currentHour >= `hour` AND $currentMinute > `minute` 
+        ORDER BY hour DESC, minute DESC LIMIT 1;");
+    $result = $query->fetchAll();
 
-    $stmt = $pdo->prepare("SELECT * FROM `$tableName` WHERE hour*100+minute < ? ORDER BY hour DESC, minute DESC LIMIT 1");
-    $stmt->execute([$hourTimes100plusMinutes]);
-    $result = $stmt->fetchAll();
+    $previousStopTime = $result[0]['minute'];
+    $previousStopName = $result[0]['stopName'];
 
-    print_r("Poprzednia stacja: ".$result[0]['hammerTime']. " Kierunek: ".$result[0]['direction'] ." Godzina: " . $result[0]['hour'] .":".$result[0]['minute'] );
-    echo ("<br>");
+    // Current stop
+    $query = $pdo->query(
+        "SELECT * FROM `$tableName` WHERE 
+        $currentHour <= `hour` AND $currentMinute < `minute` 
+        ORDER BY hour ASC, minute ASC LIMIT 1;");
+    $result = $query->fetchAll();
 
-    $stmt = $pdo->prepare("SELECT * FROM `$tableName` WHERE hour*100+minute >= ? ORDER BY hour ASC, minute ASC LIMIT 2");
-    $stmt->execute([$hourTimes100plusMinutes]);
-    $result = $stmt->fetchAll();
+    $currentStopTime = $result[0]['minute'];
+    $currentStopName = $result[0]['stopName'];
 
-    print_r("Obecna stacja: ".$result[0]['hammerTime']. " Kierunek: ".$result[0]['direction'] ." Godzina: " . $result[0]['hour'] .":".$result[0]['minute'] );
-
-
+    // Next stop
+    $query = $pdo->query(
+        "SELECT * FROM `$tableName` WHERE 
+        $currentHour <= `hour` AND $currentMinute < `minute` 
+        ORDER BY hour ASC, minute ASC LIMIT 1 OFFSET 1;");
+    $result = $query->fetchAll();
+    
+    $nextStopTime = $result[0]['minute'];
+    $nextStopName = $result[0]['stopName'];
 
     $direction = $result[0]['direction']; //TODO: insert direction from database
     $shouldDisplayRoute = $direction !== '';
-
 
 ?>
 <!DOCTYPE html>
@@ -66,7 +78,7 @@
     <div id="container">
         <div class="form-container">
             <form>
-                <p>Linia  <?= safe($line.'/'.$brigade) ?></p>    
+                <p style="margin-top: 3rem;">Linia  <?= safe($line.'/'.$brigade) ?></p>    
                 <div class="row">
                     <div class="column">
                         <label for="kierunek">Kierunek</label>
@@ -87,16 +99,16 @@
                         <th>Przystanek</th>
                     </tr>
                     <tr>
-                        <td>+<div id="timeToTheNextStop" /></td>
-                        <td><div id="nameOfTheNextStop" /></td>
+                        <td><div id="timeToTheNextStop" /></td>
+                        <td><?= safe($nextStopName) ?></td>
                     </tr>
                     <tr>
-                        <td>+<div id="timeToTheCurrentStop" /></td>
-                        <td><div id="nameOfTheCurrentStop" /></td>
+                        <td><div id="timeToTheCurrentStop" /></td>
+                        <td><?= safe($currentStopName) ?></td>
                     </tr>
                     <tr>
-                        <td>-<div id="timeFromThePreviousStop" /></td>
-                        <td><div id="nameOfThePreviousStop" /></td>
+                        <td><div id="timeFromThePreviousStop" /></td>
+                        <td><?= safe($previousStopName) ?></td>
                     </tr>
                 </table>
                 <input type="hidden" value="<?= safe($line) ?>" name="linia"><br />
@@ -126,17 +138,43 @@
 
             document.getElementById("clock").innerHTML = hour + ":" + minute + ":" + second;
 
-            if (second == 0) {
-                window.top.location.reload();
-            }
-
             setTimeout("launchClock()", 1000);
         }
 
-        function updateTimetable()
+        function timeDistanceFrom(stopTime)
         {
-            
+            if (stopTime === undefined) {
+                return "---";
+            }
+
+            var currMinute = new Date().getMinutes();
+            var currSecond = new Date().getSeconds();
+
+            var sign = (stopTime - currMinute - 1) >= 0 ? "+" : "";
+
+            var secondsDistance = sign == "+" ? (60 - currSecond) : currSecond;
+            var secondsOnTwoDigits = secondsDistance > 9 ? secondsDistance : "0" + secondsDistance
+
+            return new String(sign + (stopTime - currMinute - 1) + ":" + secondsOnTwoDigits);
         }
+
+        setInterval(function updateTimetables()
+        {
+
+
+            document.getElementById("timeToTheNextStop").innerHTML          = timeDistanceFrom(<?= safe($nextStopTime) ?>);
+            document.getElementById("timeToTheCurrentStop").innerHTML       = timeDistanceFrom(<?= safe($currentStopTime) ?>);
+            document.getElementById("timeFromThePreviousStop").innerHTML    = timeDistanceFrom(<?= safe($previousStopTime) ?>);
+            
+            var currentStopTime = <?= empty($currentStopTime) ? -1 : $currentStopTime ?>;
+            var currMinute = new Date().getMinutes();
+            
+            if (currentStopTime - currMinute == 0)
+            {
+                window.top.location.reload();
+            }
+            
+        }, 1000);
     </script>
 </body>
 </html>

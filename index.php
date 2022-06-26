@@ -15,17 +15,17 @@
         <form action="panel.php" method="get">
             <div class="row">
                 <div class="column">
-                    <label for="linia">Linia</label>
-                    <label for="brygada">Brygada</label>
-                    <label for="typ">Typ dnia</label>
+                    <label for="route">Linia</label>
+                    <label for="brigade">Brygada</label>
+                    <label for="type">Typ dnia</label>
                 </div>
                 <div class="column">
-                    <input class="input" type="text" id="linia" name="linia">
-                    <input class="input" type="text" id="brygada" name="brygada">
-                    <input class="input" type="text" id="typ" name="typ">
+                    <input class="input" type="text" name="route">
+                    <input class="input" type="text" name="brigade">
+                    <input class="input" type="text" name="type">
                 </div>
             </div>  
-            <input type="submit" value="Zatwierdź" class="actual">
+            <input type="submit" value="Zatwierdź">
         </form>
     </div>
 </div>
