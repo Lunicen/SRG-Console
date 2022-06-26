@@ -13,19 +13,19 @@
 <div id="container">
     <div class="form-container">
         <form action="panel.php" method="get">
-            <div class="column">
-                <label for="linia">Linia</label>
-                <label for="brygada">Brygada</label>
-                <label for="typ">Typ dnia</label>
-            </div>
-            <div class="column">
-                <input class="input" type="text" id="linia" name="linia">
-                <input class="input" type="text" id="brygada" name="brygada">
-                <input class="input" type="text" id="typ" name="typ">
-            </div>
-                
-                <!--<input type="submit" value="Zatwierdź" class="actual">-->
-            
+            <div class="row">
+                <div class="column">
+                    <label for="linia">Linia</label>
+                    <label for="brygada">Brygada</label>
+                    <label for="typ">Typ dnia</label>
+                </div>
+                <div class="column">
+                    <input class="input" type="text" id="linia" name="linia">
+                    <input class="input" type="text" id="brygada" name="brygada">
+                    <input class="input" type="text" id="typ" name="typ">
+                </div>
+            </div>  
+            <input type="submit" value="Zatwierdź" class="actual">
         </form>
     </div>
 </div>

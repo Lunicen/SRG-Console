@@ -17,42 +17,54 @@ html, body {
     display: inline-block;
 }
 
-#container form {
+#container form .row {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 20px;
+    padding: 1rem;
 }
 
-#container form .column {
+#container form .row .column {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
-#container form .column > * {
+#container form .row .column > * {
     margin: 0.5rem;
 }
 
-#container form .column label {
+#container form .row .column label {
+    font-size: 4vw;
     padding: 2px;
     text-align: right;
 }
 
-#panel .row {
-    margin: 1rem 0;
-}
-
-/*.input {
-    outline: solid;
-    line-height: 1.4;
-    border: 0.5rem gray;
-    color: gray;
+form .input {
+    border: 2px solid #78797D;
     background: #2A2A2A;
-    border-radius: 8px;
+    border-radius: 2px;
+    color: #E5FCFF;
+
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 3.75vw;
 }
 
-.actual {
+form input[type=submit] {
+    width: 95%;
+    padding: 2vw;
+
+    text-decoration: none;
+    border: 1px solid #78797D;
+    border-radius: 2px;
+
+    background-color: #66999B;
+    color: #E5FCFF;
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 3vw;
+}
+
+/*.actual {
     border-radius: 8px;
     background: cyan;
     color: white;
