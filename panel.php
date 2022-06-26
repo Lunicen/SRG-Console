@@ -14,7 +14,7 @@
     ];
     $pdo = new PDO($dsn, $user, $pass, $options);
 
-    //date_default_timezone_set('Europe/Warsaw');
+    date_default_timezone_set('Europe/Warsaw');
 
     // FILTER_SANITIZE_NUMBER_INT
     $line =  filter_input(INPUT_GET, 'route', FILTER_SANITIZE_NUMBER_INT);

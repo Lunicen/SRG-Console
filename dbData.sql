@@ -1,5 +1,7 @@
 use srg;
 
+drop table if exists `13-1-2`;
+
 create table `13-1-2`
 (
     direction  varchar(512) not null,
