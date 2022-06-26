@@ -28,13 +28,13 @@
     // Previous stop
     $query = $pdo->query(
         "SELECT * FROM `$tableName` WHERE 
-        $currentHour >= `hour` AND $currentMinute > `minute` 
+        $currentHour-1 = `hour` AND $currentMinute > `minute` 
         ORDER BY hour DESC, minute DESC LIMIT 1;");
     $result = $query->fetchAll();
 
     $previousStopTime = $result[0]['minute'];
     $previousStopName = $result[0]['stopName'];
-
+    
     // Current stop
     $query = $pdo->query(
         "SELECT * FROM `$tableName` WHERE 
@@ -55,8 +55,7 @@
     $nextStopTime = $result[0]['minute'];
     $nextStopName = $result[0]['stopName'];
 
-    $direction = $result[0]['direction']; //TODO: insert direction from database
-    $shouldDisplayRoute = $direction !== '';
+    $direction = $result[0]['direction'];
 
 ?>
 <!DOCTYPE html>
@@ -115,11 +114,6 @@
                 <input type="hidden" value="<?= safe($brigade) ?>" name="brygada"><br />
                 <input type="hidden" value="<?= safe($type) ?>" name="typ"><br />
             </form>
-
-            <!--<?php if ($shouldDisplayRoute): ?>
-                <p>Przystanek:</p><br />
-            <?php endif; ?>-->
-
         </div>
     </div>
 
@@ -160,12 +154,10 @@
 
         setInterval(function updateTimetables()
         {
-
-
             document.getElementById("timeToTheNextStop").innerHTML          = timeDistanceFrom(<?= safe($nextStopTime) ?>);
             document.getElementById("timeToTheCurrentStop").innerHTML       = timeDistanceFrom(<?= safe($currentStopTime) ?>);
             document.getElementById("timeFromThePreviousStop").innerHTML    = timeDistanceFrom(<?= safe($previousStopTime) ?>);
-            
+
             var currentStopTime = <?= empty($currentStopTime) ? -1 : $currentStopTime ?>;
             var currMinute = new Date().getMinutes();
             
